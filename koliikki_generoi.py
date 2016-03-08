@@ -1,14 +1,9 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import random
-import tweepy
 import time
 import sys
-
-CONSUMER_KEY = ''
-CONSUMER_SECRET = ''
-ACCESS_KEY = ''
-ACCESS_SECRET = ''
 
 # Enkoodauksessa on jotakin perseellään mutta generointi toimii muuten OK.
 # Paska algoritmi mutta tuo rautalankamalli menettelee aluksi.
@@ -23,7 +18,7 @@ def koliikkigeneraattori():
 	lopk = random.choice(loppukaneetit)
 	lause = adj + " " + subj + " " + verb + " " + obj + "! " + lopk
 	aivopieru = lause.upper()
-	print aivopieru + "(" + str(len(aivopieru)) + ")"
+	print aivopieru
 
 adjektiivit = [
   "Likainen",
